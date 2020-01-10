@@ -1,0 +1,12 @@
+ int length = size();
+		//System.out.println("-"+capacity+"--"+length);
+		//System.out.println("-"+length+"-"+(capacity/2)/2);
+		//System.out.println("-"+length);
+		 // if(capacity%(length)==0) 
+		 if(length<=(capacity/2)/2)
+			 capacity=capacity /=2;
+	
+		     int newStack[] =new int[capacity];
+		  	 System.arraycopy( stack,0, newStack,0,length);
+		     stack=newStack;
+		
